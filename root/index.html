@@ -1,0 +1,21 @@
+<!-- code:web3-12 index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style/style.css" />
+</head>
+<body>
+    {{ template "header" . }}
+    <div class="contents">
+        <p>{{.Message}}</p>
+        <p>{{.Time.Format "2006/1/2 15:04:05"}}</p>
+        <img id="fly" class="flyBefore" src="/assets/img/test.jpg" width="300px"/>
+        <h1 class="hello">hello</h1> 
+    </div>
+    {{ template "footer" }}
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
